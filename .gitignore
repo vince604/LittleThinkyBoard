@@ -11,3 +11,5 @@ __pycache__/
 # 可能的虚拟环境文件夹 (一个好习惯)
 venv/
 .venv/
+
+.DS_Store
