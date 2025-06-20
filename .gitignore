@@ -1,0 +1,13 @@
+# 数据库文件 (包含你所有的脚本和句子)
+database.db
+
+# 上传的图片文件夹
+uploads/
+
+# Python 自动生成的缓存文件
+__pycache__/
+*.pyc
+
+# 可能的虚拟环境文件夹 (一个好习惯)
+venv/
+.venv/
