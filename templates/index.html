@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的本地故事版 (V3)</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="panel scripts-panel">
+            <h2>我的脚本</h2>
+            <div id="scripts-list"></div>
+            <div class="input-group">
+                <input type="text" id="new-script-name" placeholder="输入新脚本名称...">
+                <button id="add-script-btn">创建脚本</button>
+            </div>
+        </div>
+
+        <div class="panel sentences-panel">
+            <h2 id="current-script-title">请先选择一个脚本</h2>
+            <div id="sentences-list"></div>
+             <div class="input-group" id="add-sentence-container" style="display: none;">
+                <textarea id="new-sentence-text" placeholder="输入新句子..."></textarea>
+                <button id="add-sentence-btn">添加句子</button>
+            </div>
+        </div>
+
+        <div class="panel storyboard-panel">
+            <div id="storyboard-details" style="display: none;">
+                <h2>句子详情</h2>
+                <div id="current-sentence-text"></div>
+            </div>
+            
+            <div id="main-image-container">
+                <img id="main-image" src="" alt="主图预览区">
+            </div>
+            <div id="thumbnails-container"></div>
+            <div class="input-group" id="upload-container" style="display: none;">
+                <label for="image-upload-input" class="upload-btn">上传图片</label>
+                <input type="file" id="image-upload-input" accept="image/*" multiple>
+                <span>（可一次选择多张图片）</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
